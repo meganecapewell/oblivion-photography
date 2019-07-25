@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- initisl scale for 1 for mobile websites-->
+
+    <title>Oblivion Photography</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrap.com/bootstrap/4.0.0/css/bootstrap.min.css">  -->
+      <!-- this connects the html and css to bootstrap  4-->
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/"> -->
+
+    <script src = "https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!-- this is for the font awesome social media icons that are in this site-->
+
+
+
+    <link href="css/styles.css" rel="stylesheet">
+      <!-- This is the reference to css so it know where your css file is -->
+
+  </head>
+  <body>
+
+  <!-- Navigation -->
+
+    <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <!-- referencing md because thats the breakpoint when screen changes from
+      mobile nav to full width navigation,
+      navbar-light is the white background, with dark navigation text,
+      and STICKY-TOP as opposed to fixed -->
+
+      <div class="container-fluid">
+        <!-- div container for bootstrap container, fluid so takes up 100% of screen-->
+        <a class="navbar-brand" href="#">
+           <img class="logo-image" src="images/icon photo.png"  alt="logo-image">
+        </a>
+        <!-- this is for the logo, href is the link, and img src is referencing the image -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <!-- this is for the navigation button,
+          toggler as it is basically toggle switch for navigation
+          and collapse because the navigation will be collasping -->
+          <span class="navbar-toggler-icon"></span>
+          <!-- this is for the icon, in bootstrap 4 all you need is to add a span class, as opposed to a line for each bar in the navigation collapsed-nav -->
+        </button>
+
+        <!--NOW ADD CLASS FOR COLLAPSIBLE NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- this is for the unordered list items that will be in the navigation -->
+            <ul class = "navbar-nav ml-auto"
+            <!-- ml-auto, will push navigation when at full width to right hand side, as opposed to middle or left -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Connect</a>
+              </li>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+  <!-- Image Slider -->
+  <div id = "slides" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+      <!-- this is the indicators for slides-->
+      <li data-target="#slides" data-slides-to="0" class="active"></li>
+        <!-- in this data-target, reference the div id that you just created, the slides;
+        make first one the class active;
+        copy and paste this li for how many slides that you have - starts at 0-->
+      <li data-target="#slides" data-slides-to="1"></li>
+      <li data-target="#slides" data-slides-to="2"></li>
+    </ul>
+
+    <!-- now to see the images on the slides, add the images below -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- this add the carousel item, with image inside this div
+        do this for every photo, make the first one the active class-->
+        <img src="images/nature-wide.jpg">
+          <div class="carousel-caption">
+            <!-- this is for the main page caption on top of main carousel -->
+            <h1 class="display-2">Oblivion</h1>
+              <!-- Bootstrap has display classes that make text large and lightweight,
+              with display 1-4, 2 being one of the bigger ones -->
+              <h3>Local Photography Design</h3>
+              <button type="button" class="btn btn-outline-light btn-lg">Photos</button>
+              <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                <!-- by default primary button is a blue shade -->
+
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/wedding-lake-district.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="images/farmyard.jpg">
+      </div>
+
+      </div>
+    </div>
+
+
+  <!-- Jumbotron -->
+
+  <div class="container-fluid">
+    <!-- container takes up 100% of screen -->
+
+    <div class="row jumbotron">
+      <!-- when scren gets smaller, basically two columns, the stuff will cut in half-->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <!-- col-xs-12, so xs width will take up 100%, as bootstrap grid has 12 columns -->
+        <p class="lead">They say a photos can speak a thousand words.  No matter what occasion, let Oblivion Photography help create timeless, amazing photos that can last a lifetime. </p>
+        <!-- lead is a lightweight text weight-->
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl2">
+        <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">
+          Services</button></a>
+          <!-- btn-lg for large button -->
+
+    </div>
+  </div>
+
+
+  <!-- Welcome  Section-->
+
+  <div class="container-fluid padding">
+    <!-- padding is for adding more space for containers and rows -->
+    <div class="row welcome text-center">
+      <!-- row, and text-center are bootstrap classes, welcome is a class that will style later in css.-->
+      <div class="col-12">
+        <!-- col-12 as it takes up all columns and screen, it is a full-width column -->
+        <h1 class="display-4">A Timeless Collection</h1>
+        <hr>
+        <div class="col-12">
+          <p class="lead">Founded in 2017, Oblivion was started by a local girl who believed that every occasion, whether it be weddings, gatherings, family, or birthdays, can be remembered in something as simple as a photo.  A photo can bring back memories, or a smile or a laugh to anyone's face.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three Column Section -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <!--
+      <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+             this is to include the font awesome icon
+            <h3>HTML5</h3>
+            <p>Built with the latest version of HTML, HTML5</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+             this is to include the font awesome icon
+            <h3>Bootstrap</h3>
+            <p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        with scren gets smaller, this last icon goes in the middle, then the last
+        <i class="fab fa-css3"></i>
+        <h3>CSS3</h3>
+        <p>Built with the latest version of CSS, CSS3.</p>
+      </div>
+    </div>
+    <hr class="my-4">
+     adding padding from the bottom of this section,
+    using the bootstrap horizontal rule called my-4, is a light grey horizontal rule that spans across whole page
+
+   Two Column Section
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+        <h2>If you build it...</h2>
+        <p>The columns will automatically stack on tp of each other .asdf sdfadfgagjaoerharh</p>
+        <p> asdkfbarhg aubgairbga fasdfiads fdf ;f af af a;s f;fa ff;nd;fna;sgog aksdjf lasdb fadf ajsdf aef d aj fdf alf a fa fa dflasd fa efl</p>
+        <p>She literature discovered increasing how diminution understood. Though and highly the enough county for man. Of it up he still court alone widow seems. Suspected he remainder rapturous my sweetness. All vanity regard sudden nor simple can. World mrs and vexed china since after often.</p>
+        <br>
+
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/desk.png" class="img-fluid">
+         img-fluid is for responsive
+      </div>
+    </div>
+  </div>
+  <hr>
+  <hr class="my-4">
+
+   Fixed Background
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+      </div>
+    </div>
+  </figure>
+
+
+   Emoji Section
+  <button class="fun" data-toggle="collapse" data-target="#emoji"> Click for fun!
+  </button>
+  <div id="emoji" class="collapse">
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src="images/gif/panda.gif">
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src="images/gif/poo.gif">
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src="images/gif/unicorn.gif">
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <img class="gif" src="images/gif/chicken.gif">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+-->
+    <!-- Meet the team -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Meet the Team </h1>
+      </div>
+      <hr>
+    </div>
+
+    <!-- Cards -->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top" src="images/team1.png">
+            <!-- card-img-top as photo is at the top-->
+
+        <div class="card-body">
+          <h4 class="card-title">John Doe </h4>
+          <p class="card-text">John is an photography expert with almost 20 years of experience.</p>
+          <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+          <img class="card-img-top" src="images/team2.png">
+          <!-- card-img-top as photo is at the top-->
+
+        <div class="card-body">
+          <h4 class="card-title">Megan Elizabeth </h4>
+          <p class="card-text">Megan has over 5 years experience from weddings to birthdays, to family gatherings.
+          <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="images/team3.png">
+        <!-- card-img-top as photo is at the top-->
+
+        <div class="card-body">
+          <h4 class="card-title">Phil Ho </h4>
+          <p class="card-text">Phil is a old-school photographer with over 10 years, including in old developing style photogrpahy.</p>
+          <a href="#" class="btn btn-outline-secondary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- Two Column Section -->
+
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2>Our Philosophy</h2>
+          <p>Megan Elizabeth, the founder, believed that every photo can stand the test of time.  A photo can bring back memories of a childhood, of spending a day with a loved one, or laughing over the silly memories you had with your friends.</p>
+
+          <p>Over time as she discovered how powerful a photo can be, her team grew to have a few employees that shared in the same philosophy.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/girl.jpg" class="img-fluid">
+          <!-- img-fluid is for responsive-->
+        </div>
+      </div>
+      <hr class="my-4">
+    </div>
+
+    <!-- Connect -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Connect</h2>
+        </div>
+
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="images/icon photo.png">
+            <hr class="light">
+            <!-- styled in css in a light color-->
+            <p>555.567.6789</p>
+            <p>email@thisemail.com</p>
+            <p>100 Happy Lane St</p>
+            <p>Maineland, Maine, 00123 </p>
+          </div>
+
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Our Hours</h5>
+            <hr class="light">
+            <p>Monday: 9am-5pm </p>
+            <p>Saturday: 10am-4pm </p>
+            <p>Sunday: closed </p>
+          </div>
+
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Service Area</h5>
+            <hr class="light">
+            <p>Vancouver, Canada, YVR </p>
+            <p>Los Angeles, California, LAX </p>
+            <p>New York City, New York, NYX </p>
+            <p>London, England, LON </p>
+          </div>
+
+          <div class="col-12">
+            <hr class="hr-100">
+            <h5>&copy; Oblivion Photography (template for site from video) </h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
